@@ -3,7 +3,7 @@ from random import randint
 
 
 def is_prime_calc(num):
-    return all(num % i for i in xrange(2, num))
+    return all(num % i for i in range(2, num))
 
 def is_prime(num):
     return is_prime_calc(num)
