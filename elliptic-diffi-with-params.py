@@ -50,7 +50,7 @@ def isPointP(a1):
 
 
 # egri chiziqdagi nuqtalarni chiqarish
-def allPoints(a, b, p, param=False):
+def allPoints(param=False):
     c = 0
     points = []
     for i in range(0, p):
@@ -229,6 +229,7 @@ def primes(N):
 def calc_b(B):
     return (B*R-a)%p
 
+
 def findP(prime, points, param=False):
     point_linst = []
     for point in points:
@@ -248,106 +249,38 @@ def showResult(a, b, p):
         print("Bu parametrlar mos tushmaydi(a, b)")
         # return None
 
-    all_points = allPoints(a, b, p, param=False)
+    all_points = allPoints(param=False)
     N = all_points[0]+1
     n = min(primes(N))
-    print(all_points[1])
     G, h = findP(n, all_points[1], param=False)
-
-    print()
     print(N, " - Nuqtalar soni(N)")
     print(primes(N), " - tub bo'luvchilari(n)")
-    print(all_points[1], " - Egri chiziqdagi nuqtalar")
-    print(G, " - Ixtiyoriy nuqta")
+    # print(all_points[1], " - Egri chiziqdagi nuqtalar")
     print(f"\np={p}\na={a}\nb={b}\nG={G}\nn={n}\nh={h}")
-    print("\n\n\n")
 
-    print("===========================")
 
-    all_points = allPoints(a, b, p, param=True)
-    Na = randint(1, n-1)
-    Nb = randint(1, n-1)
-    pG = powerXYR(G, 1)
-    print(Na, pG)
-    P = p_double_and_add(Na, pG)
-    print(P, )
-    print(all_points[1], " - Parametrli egri chiziqdagi nuqtalar")
-    print("\n\n\n")
-
-    # Pa = p_double_and_add(Na, pG)
-    # Pb = p_double_and_add(Nb, pG)
-    # Ka = p_double_and_add(Na, Pb)
-    # Kb = p_double_and_add(Nb, Pa)
-    # print(f"Ka={Ka}\nKb={Kb}")
+    # all_points = allPoints(param=True)
+    Na, Nb = randint(1, n-1), randint(1, n-1)
+    # print(all_points[1], " - Parametrli egri chiziqdagi nuqtalar")
+    print("\n\nNatija:")
+    print(f"Na={Na}\nNb={Nb}")
+    pa = double_and_add(Na, G)
+    pb = double_and_add(Nb, G)
+    print(f"pa={pa}\npb={pb}\n")
+    Pa = conv2param(pa)
+    Pb = conv2param(pb)
+    print(f"Pa={Pa}\nPb={Pb}\n")
+    ka = double_and_add(Na, pb)
+    kb = double_and_add(Nb, pa)
+    Ka = conv2param(ka)
+    Kb = conv2param(kb)
+    print(f"ka={ka}\nkb={kb}\n")
+    print(f"Ka={Ka}\nKb={Kb}")
 
 
 if __name__ == "__main__":
-    # a, b, p = int(input("a=")), int(input("b=")), int(input("p="))
-    # # a, b, p = (-1, 3, 29)
-    # showResult(a, b, p)
+    a, B, p, R = int(input("a=")), int(input("B=")), int(input("p=")), int(input("R="))
+    # a, B, p, R = (1, 137, 229, 2)
 
-
-    # if not check_ab(a, b):
-    #     print("Bu parametrlar mos tushmaydi(a, b)")
-    #     # return None
-
-    # all_points = allPoints(a, b, p)
-    # N = all_points[0]+1
-    # n = min(primes(N))
-    # G, h = findP(n, all_points[1])
-
-    # # Maxfiy kalitlar
-    # a_maxfiy = randint(1, n-1)
-    # b_maxfiy = randint(1, n-1)
-    # print(a_maxfiy)
-    # print(b_maxfiy)
-
-    # A_nuqta = double_and_add(a_maxfiy, G)
-    # B_nuqta = double_and_add(b_maxfiy, G)
-    # print(A_nuqta)
-    # print(B_nuqta)
-
-    # K_a = double_and_add(a_maxfiy, B_nuqta)
-    # K_b = double_and_add(b_maxfiy, A_nuqta)
-
-    # print(f'K_a={K_a}\nK_b={K_b}')
-
-    # print()
-    # print(N, " - Nuqtalar soni(N)")
-    # print(primes(N), " - tub bo'luvchilari(n)")
-    # print(all_points[1], " - Egri chiziqdagi nuqtalar")
-    # print(G, " - Ixtiyoriy nuqta")
-    # print(f"\np={p}\na={a}\nb={b}\nG={G}\nn={n}\nh={h}")
-    # print("\n\n\n")
-
-    # print(powerR(7, 3, 1, 11, 2))
-    # print(y_inv(3, 2, 7))
-
-    p = 229
-    a = 1
-    B = 137
-    R = 2
-    b = calc_b(B) # 44
-
-    # print(p_double_and_add(2, (57, 116)))
-    # print(powerXYR(115, 1), "x")
-    # print(powerXYR(4, 2), "y2")
-    # print(powerXYR(115, 3), "x3")
-    # print(powerXYR(57, 2), "- 57\\2")
-    # print(p_double_and_add(5, (115, 4)))
-
-    # print(powerXYR(38, 2), "38p")
-    # showResult(a, b, p)
-    # print(conv2param(double_and_add(17, (115, 4))))
-    # print(p_double_and_add(17, conv2param((115, 4))))
-    # print(powerXYR(57, 2))
-    # print(inv(57-130))
-
-    Na, Nb = 207, 17
-    pG = (115, 4)
-    Pa = conv2param(double_and_add(Na, pG))
-    Pb = conv2param(double_and_add(Nb, pG))
-    print(Pa, Pb)
-    Ka = conv2param(double_and_add(Na, conv2param(Pb, reverse=True)))
-    Kb = conv2param(double_and_add(Nb, conv2param(Pa, reverse=True)))
-    print(f"Ka={Ka}\nKb={Kb}")
+    b = calc_b(B)
+    showResult(a, b, p)
