@@ -106,7 +106,6 @@ if __name__ == "__main__":
     q = q_list[randrange(0, len(q_list))]
     # q > 2^163
     # powerR(q, a, 1)==0 -> a
-
     print("q", q)
 
     Ra, Rb = (3, 5) # ikkala tomondan olinadi
