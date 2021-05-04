@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiffiHelman</class>
+ <widget class="QMainWindow" name="DiffiHelman">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>991</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>308</y>
+       <width>732</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>961</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QSplitter" name="splitter_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Diffi Helman</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="diff_g">
+         <property name="placeholderText">
+          <string>g</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Hisoblash</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTextBrowser" name="diffi_text">
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;dsadasd&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Natija</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Diffi Helman(param)</string>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="diffi_param_xa">
+            <property name="placeholderText">
+             <string>xa</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="diffi_param_Rb">
+            <property name="placeholderText">
+             <string>Rb</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="diffi_param_xb">
+            <property name="placeholderText">
+             <string>xb</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="diffi_param_Ra">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ra</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTextBrowser" name="diffi_param_text">
+         <property name="placeholderText">
+          <string>Natija</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_10">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_9">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Elliptic Diffi Helman</string>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="el_diffi_a">
+            <property name="placeholderText">
+             <string>a</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="el_diffi_b">
+            <property name="placeholderText">
+             <string>b</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTextBrowser" name="el_diffi_text">
+         <property name="placeholderText">
+          <string>Natija</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_8">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Elliptic Diffi Helman(Param)</string>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="el_diffi_para_a">
+            <property name="placeholderText">
+             <string>a</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="el_diffi_param_B">
+            <property name="placeholderText">
+             <string>B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="el_diffi_param_R">
+            <property name="placeholderText">
+             <string>R</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTextBrowser" name="el_diffi_param_text">
+         <property name="placeholderText">
+          <string>Natija</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>988</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
