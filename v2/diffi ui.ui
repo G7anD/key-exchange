@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>988</width>
-    <height>590</height>
+    <height>580</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-10</x>
       <y>-30</y>
       <width>991</width>
       <height>601</height>
@@ -42,10 +42,10 @@
     <widget class="QSplitter" name="splitter_11">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>40</y>
-       <width>961</width>
-       <height>551</height>
+       <width>971</width>
+       <height>518</height>
       </rect>
      </property>
      <property name="orientation">
@@ -65,7 +65,7 @@
         </property>
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>Diffi Helman</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Diffi Helman                                                 g:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="diff_g">
@@ -103,7 +103,35 @@
         </property>
         <widget class="QWidget" name="layoutWidget">
          <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="1">
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="diffi_param_Rb">
+            <property name="placeholderText">
+             <string>Rb</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Ra</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>xb</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="diffi_param_xb">
+            <property name="placeholderText">
+             <string>xb</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
            <widget class="QLineEdit" name="diffi_param_xa">
             <property name="placeholderText">
              <string>xa</string>
@@ -111,20 +139,20 @@
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLineEdit" name="diffi_param_Rb">
-            <property name="placeholderText">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
              <string>Rb</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="diffi_param_xb">
-            <property name="placeholderText">
-             <string>xb</string>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>xa</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
+          <item row="0" column="1">
            <widget class="QLineEdit" name="diffi_param_Ra">
             <property name="text">
              <string/>
@@ -164,9 +192,23 @@
         <widget class="QWidget" name="layoutWidget">
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>a</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QLineEdit" name="el_diffi_a">
             <property name="placeholderText">
              <string>a</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>b</string>
             </property>
            </widget>
           </item>
@@ -202,6 +244,13 @@
         <widget class="QWidget" name="layoutWidget">
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>a</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QLineEdit" name="el_diffi_para_a">
             <property name="placeholderText">
              <string>a</string>
@@ -209,9 +258,23 @@
            </widget>
           </item>
           <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QLineEdit" name="el_diffi_param_B">
             <property name="placeholderText">
              <string>B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>R</string>
             </property>
            </widget>
           </item>

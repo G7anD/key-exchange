@@ -10,12 +10,14 @@ class DiffiParam:
         # self.p = 37
         self.p: int = self.get_random_prime()
         self.q: int = self.primes(self.p-1)
-        for i in range(1, self.q, int(self.q/1000000)):
-            res: int = self.powerR(self.q, i, 1)
-            print(res)
-            if res == 0:
-                self.a: int = i
-                break
+        # for i in range(1, self.q, int(self.q/1000000)):
+        #     res: int = self.powerR(self.q, i, 1)
+        #     print(res)
+        #     if res == 0:
+        #         self.a: int = i
+        #         break
+        self.a = 143
+
 
     def get_random_prime(self) -> int:
         while True:
@@ -108,7 +110,7 @@ class DiffiParam:
 
 
 # import time
-diff = DiffiParam()
+# diff = DiffiParam()
 # start_time = time.time()
 # print(diff.powerROLD(221332423432432423423412333, 3213, 312312))
 # end_time = (time.time() - start_time)*1000
@@ -136,4 +138,4 @@ diff = DiffiParam()
 
 
 # export diffiParam class
-# sys.modules[__name__] = DiffiParam
+sys.modules[__name__] = DiffiParam

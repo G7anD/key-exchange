@@ -60,7 +60,7 @@ class DiffiParam:
 
     def a2(self, a, R):
         return (a*(2+R*a)) % self.p
-
+ 
     def bits(self, n):
         result = []
         while n:
